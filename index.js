@@ -5,8 +5,8 @@ function findMatching(drivers, name) {
   });
 }
 
-function fuzzyMatch(drivers, name){
+function fuzzyMatch(drivers, letters) {
   return drivers.filter(function(driver){
-    return driver.
-  })
-}
+    return driver.startsWith(letters);
+  });
+};
